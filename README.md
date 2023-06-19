@@ -6,7 +6,7 @@ If you want to overwrite the current dependencies `react-grid-layout` or another
 ```json
 // package.json
 "dependencies": {
-  "react-draggable": "npm:@tdaniil/react-draggable@^5.0.0"
+  "react-draggable": "npm:@tdaniil/react-draggable@5.0.1"
 },
 "overrides": {
   "react-draggable": "npm:@tdaniil/react-draggable@5.0.1"
