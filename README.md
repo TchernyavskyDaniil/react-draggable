@@ -2,6 +2,11 @@
 ## This is fork with few fixes for React 18 
 ### PR are welcome
 
+If you want rewrite current `react-draggable` or `react-grid-layout`:
+```json
+"react-draggable": "npm:@tdaniil/react-draggable@^5.0.0"
+```
+
 [![TravisCI Build Status](https://api.travis-ci.org/react-grid-layout/react-draggable.svg?branch=master)](https://travis-ci.org/react-grid-layout/react-draggable)
 [![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true)](https://ci.appveyor.com/project/react-grid-layout/react-draggable)
 [![npm downloads](https://img.shields.io/npm/dt/react-draggable.svg?maxAge=2592000)](http://npmjs.com/package/react-draggable)
