@@ -1,6 +1,6 @@
 {
   "name": "@tdaniil/react-draggable",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "description": "React draggable component",
   "main": "build/cjs/cjs.js",
   "unpkg": "build/web/react-draggable.min.js",
