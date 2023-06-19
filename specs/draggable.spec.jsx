@@ -12,11 +12,22 @@ const transformStyle = browserPrefixToStyle('transform', getPrefix('transform'))
 const transformKey = browserPrefixToKey('transform', getPrefix('transform'));
 const userSelectStyle = browserPrefixToStyle('user-select', getPrefix('user-select'));
 
+function stoperror() {
+  return true;
+}
+
 describe('react-draggable', function () {
   var drag;
 
   // Remove body margin so offsetParent calculations work properly
   beforeAll(function() {
+    window.addEventListener('error', e => {
+      if(e.message === 'ResizeObserver loop completed with undelivered notifications.' ||
+        e.message === 'ResizeObserver loop limit exceeded') {
+        e.stopImmediatePropagation();
+        window.onerror = stoperror;
+      }
+    });
     const styleNode = document.createElement('style');
     // browser detection (based on prototype.js)
     const styleText = document.createTextNode('body {margin: 0;}');

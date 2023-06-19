@@ -10,7 +10,6 @@ module.exports = function(config) {
     require('./webpack.config.js')({}, {}),
     {
       mode: 'development',
-      cache: true,
       performance: {
         hints: false,
       },
