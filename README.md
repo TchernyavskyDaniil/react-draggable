@@ -2,9 +2,15 @@
 ## This is fork with few fixes for React 18 
 ### PR are welcome
 
-If you want rewrite current `react-draggable` or `react-grid-layout`:
+If you want to overwrite the current dependencies `react-grid-layout` or another package, you must use this hack:
 ```json
-"react-draggable": "npm:@tdaniil/react-draggable@^5.0.0"
+// package.json
+"dependencies": {
+  "react-draggable": "npm:@tdaniil/react-draggable@^5.0.0"
+},
+"overrides": {
+  "react-draggable": "npm:@tdaniil/react-draggable@5.0.1"
+},
 ```
 
 [![TravisCI Build Status](https://api.travis-ci.org/react-grid-layout/react-draggable.svg?branch=master)](https://travis-ci.org/react-grid-layout/react-draggable)
