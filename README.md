@@ -51,7 +51,7 @@ A simple component for making elements draggable.
 ### Installing
 
 ```bash
-$ npm install @tchernyavskyd/react-draggable
+$ npm install @tdaniil/react-draggable
 ```
 
 If you aren't using browserify/webpack, a

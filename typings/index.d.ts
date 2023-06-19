@@ -1,4 +1,4 @@
-declare module '@tchernyavskyd/react-draggable' {
+declare module '@tdaniil/react-draggable' {
   import * as React from 'react';
 
   export interface DraggableBounds {
