@@ -1,4 +1,6 @@
 # React-Draggable
+## This is fork with few fixes for React 18
+### PR are welcome
 
 [![TravisCI Build Status](https://api.travis-ci.org/react-grid-layout/react-draggable.svg?branch=master)](https://travis-ci.org/react-grid-layout/react-draggable)
 [![Appveyor Build Status](https://ci.appveyor.com/api/projects/status/32r7s2skrgm9ubva?svg=true)](https://ci.appveyor.com/project/react-grid-layout/react-draggable)
@@ -22,13 +24,14 @@ A simple component for making elements draggable.
 - [Changelog](CHANGELOG.md)
 
 
-|Version     | Compatibility|
-|------------|--------------|
-|4.x         | React 16.3+  |
-|3.x         | React 15-16  |
-|2.x         | React 0.14 - 15   |
-|1.x         | React 0.13 - 0.14 |
-|0.x         | React 0.10 - 0.13 |
+| Version | Compatibility   |
+|---------|-----------------|
+| 5.x     | React 18+       |
+| 4.x     | React 16.3+     |
+| 3.x     | React 15-16     |
+| 2.x     | React 0.14 - 15 |
+| 1.x     | React 0.13 - 0.14 |
+| 0.x     | React 0.10 - 0.13 |
 
 ------
 
@@ -48,7 +51,7 @@ A simple component for making elements draggable.
 ### Installing
 
 ```bash
-$ npm install react-draggable
+$ npm install @tchernyavskyd/react-draggable
 ```
 
 If you aren't using browserify/webpack, a

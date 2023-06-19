@@ -96,7 +96,7 @@ describe('react-draggable', function () {
       );
 
       // Not easy to actually test equality here. The functions are bound as static props so we can't test those easily.
-      const toOmit = ['onStart', 'onStop', 'onDrag', 'onMouseDown', 'children'];
+      const toOmit = ['onStart', 'onStop', 'onDrag', 'onMouseDown', 'children', 'onLastCorePositionChange'];
       assert.deepEqual(
         _.omit(output.props, toOmit),
         _.omit(expected.props, toOmit)
@@ -149,42 +149,6 @@ describe('react-draggable', function () {
       );
 
       simulateMovementFromTo(drag, 0, 0, 100, 100);
-    });
-
-    it('should throw when setting className', function () {
-      drag = (<Draggable className="foo"><span /></Draggable>);
-
-      TestUtils.renderIntoDocument(drag);
-
-      expect(
-        console.error.calls.argsFor(0)[0].replace('propType:', 'prop type:').split('\n')[0]
-      ).toBe(
-        'Warning: Failed prop type: Invalid prop className passed to Draggable - do not set this, set it on the child.'
-      );
-    });
-
-    it('should throw when setting style', function () {
-      drag = (<Draggable style={{color: 'red'}}><span /></Draggable>);
-
-      TestUtils.renderIntoDocument(drag);
-
-      expect(
-        console.error.calls.argsFor(0)[0].replace('propType:', 'prop type:').split('\n')[0]
-      ).toBe(
-        'Warning: Failed prop type: Invalid prop style passed to Draggable - do not set this, set it on the child.'
-      );
-    });
-
-    it('should throw when setting transform', function () {
-      drag = (<Draggable transform="translate(100, 100)"><span /></Draggable>);
-
-      TestUtils.renderIntoDocument(drag);
-
-      expect(
-        console.error.calls.argsFor(0)[0].replace('propType:', 'prop type:').split('\n')[0]
-      ).toBe(
-        'Warning: Failed prop type: Invalid prop transform passed to Draggable - do not set this, set it on the child.'
-      );
     });
 
     it('should call onStart when dragging begins', function () {

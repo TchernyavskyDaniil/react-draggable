@@ -252,4 +252,6 @@ class RemWrapper extends React.Component {
 }
 
 
-ReactDOM.render(<App/>, document.getElementById('container'));
+const root = ReactDOM.createRoot(document.getElementById('container'))
+
+root.render(<App/>);

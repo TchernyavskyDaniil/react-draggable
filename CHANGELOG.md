@@ -1,5 +1,12 @@
 # Changelog
 
+### 5.0.0 (June 19, 2023)
+
+- Added support for React 18+
+- Added fix [Fix react18 concurrent mode drag glitch due to state inconsistency](https://github.com/react-grid-layout/react-draggable/pull/699)
+- Added feature [Use ResizeObserver to compensate component height when it changes](https://github.com/react-grid-layout/react-draggable/pull/691)
+- Added fix [fix: <DraggableCore> not mounted on DragStart](https://github.com/react-grid-layout/react-draggable/pull/671)
+
 ### 4.4.5 (Apr 26, 2022)
 
 - Fix: `grid` prop unused in `handleDragStop` #621
