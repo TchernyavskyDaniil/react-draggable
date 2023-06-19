@@ -2,9 +2,8 @@
 ## This is fork with few fixes for React 18 
 ### PR are welcome
 
-If you want to overwrite the current dependencies `react-grid-layout` or another package, you must use this hack:
+If you want to overwrite the current dependencies `react-grid-layout` or another package, you must use this hack in `package.json`
 ```json
-// package.json
 "dependencies": {
   "react-draggable": "npm:@tdaniil/react-draggable@5.0.1"
 },
